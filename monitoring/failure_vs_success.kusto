@@ -1,0 +1,5 @@
+SigninLogs
+| where IPAddress == "1.7.6.1"
+| summarize
+    Success = countif(ResultType == 0),
+    Failures = countif(ResultType != 0)
