@@ -1,0 +1,1 @@
+ipAddress eq "1.2.3.4" and status/errorCode eq 0
