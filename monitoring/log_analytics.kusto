@@ -1,0 +1,4 @@
+SigninLogs
+| where IPAddress == "1.2.3.4"
+| project TimeGenerated, UserPrincipalName, AppDisplayName, ResultType, Location
+| order by TimeGenerated desc
